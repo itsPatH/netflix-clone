@@ -1,7 +1,8 @@
-import { Button } from "@/components/ui/button";
-
+import { Navbar } from "../components/shared/Navbar/Navbar";
 export default function Home() {
   return (
-    <Button>Miau</Button>
+    <div className="relative bg-zinc-900">
+      <Navbar/>
+    </div>
   );
 }
