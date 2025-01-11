@@ -1,10 +1,15 @@
+import { NavbarDesktop } from "./NavbarDesktop";
+import { NavbarMobile } from "./NavbarMobile";
+
 export  function Navbar() {
   return (
     <nav>
       <div className="hidden mx-auto md:block">
-        <p>Navbar Desktop</p>
+        <NavbarDesktop/>
       </div>
-        <p>Navbar Mobile</p>
+      <div className="md:hidden">
+        <NavbarMobile/>
+      </div>   
     </nav>
   )
 }
